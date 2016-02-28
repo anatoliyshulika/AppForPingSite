@@ -1,0 +1,19 @@
+﻿<div class="container">
+    <form>
+        <div id="tinout">
+            <span>Url:</span><br />
+            <input type="text" id="textin" /><br />
+            <span>Current respons time</span><br />
+            <input type="text" id="textout" name="textout" />
+            <span>ms</span>
+        </div>
+    </form><br />
+    <div id="chart" style="width:500px; height:300px;"></div><br />
+    <div id="buttons">
+        <button type="button" id="buttonStart" class="btn-default" onclick="PingSite(textin.value)">Start Ping</button>
+        <button type="button" id="buttonStop" class="btn-primary" onclick="StopPing(textin.value)">Stop Ping</button>
+        <button type="button" id="showTop" class="btn-success" onclick="ShowTop()">Show top slowest sites</button>
+        <button type="button" id="cleardb" class="btn-warning" onclick="ClearDb()">Clear Db</button>
+    </div><br />
+    <div id="siteTable"></div>
+</div>

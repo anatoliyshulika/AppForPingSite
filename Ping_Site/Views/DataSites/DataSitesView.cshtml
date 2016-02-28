@@ -1,0 +1,34 @@
+﻿@model Ping_Site.DataSite
+@{
+    Layout = null;
+}
+<table class="table">
+    <tr>
+        <th class="cell">
+            Url
+        </th>
+        <th class="cell">
+            Min resp. time (ms)
+        </th>
+        <th class="cell">
+            Max resp. time (ms)
+        </th>
+    </tr>
+    @{ 
+        foreach(DataSite d in ViewBag.topList)
+        {
+            <tr>
+                <td class="cell">
+                    @d.Path
+                </td>
+                <td class="cell">
+                    @d.ResponseTimeMin
+                </td>
+                <td class="cell">
+                    @d.ResponseTimeMax
+                </td>
+            </tr>
+        }
+    }
+</table>
+

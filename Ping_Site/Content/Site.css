@@ -1,0 +1,39 @@
+﻿body{
+    background-color: gray;
+}
+#chart{
+    border: 1px solid;
+    border-color: aqua;
+    background-color: aqua;
+    margin: 0 auto;
+}
+.cell{
+    border: 1px solid black !important;
+}
+#tinout{
+    margin: 0 auto;
+    width: 500px;
+}
+#buttons{
+    margin: 0 auto;
+    width: 500px;
+}
+#siteTable{
+    margin: 0 auto;
+    width: 500px;
+}
+#textin{
+    width: 200px;
+}
+#buttonStart{
+    width: 95px;
+}
+#buttonStop{
+    width: 95px;
+}
+#showTop{
+    width: 200px;
+}
+#cleardb{
+    width: 95px;
+}
